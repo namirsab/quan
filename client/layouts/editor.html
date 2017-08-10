@@ -1,0 +1,10 @@
+<template name="editor">
+  <p>
+    <input type="text" value="{{item.question}}"><label>{{item.question}}</label>
+  </p>
+  {{#each answer in item.answers}}
+    <p>
+      <input type="text" value="{{answer}}"><label>{{answer}}</label>
+    </p>
+  {{/each}}
+</template>
