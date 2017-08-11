@@ -1,8 +1,10 @@
 <template name="surveyLayout">
   <main>
     <h1>Current survey</h1>
-    {{> Template.dynamic template=main}}
-    {{> doneButton}}
+    <form>
+      {{> Template.dynamic template=main}}
+      {{> doneButton}}
+    </form>
   </main>
 </template>
 
@@ -11,9 +13,9 @@
 </template>
 
 <template name="survey">
-  <p>{{item.question}}</p>
-  {{#each answer in item.answers}}
-    <input type="radio" id="{{@index}}" name="answer"><label>{{answer}}</label>
+  <p>{{survey.question}}</p>
+  {{#each answer in survey.answers}}
+    <input type="radio" id="{{@index}}" name="answer" checked><label for="{{@index}}">{{answer}}</label>
   {{/each}}
   <p></p>
 </template>

@@ -9,5 +9,4 @@ Meteor.startup(() => {
     console.log('database err: ' + err)
     console.log('database doc: ' + doc)
   })
-  console.log('TEST: ' + util.inspect(findCurrentSurvey()))
 })

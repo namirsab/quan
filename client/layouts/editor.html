@@ -1,10 +1,24 @@
 <template name="editor">
   <p>
-    <input type="text" value="{{item.question}}"><label>{{item.question}}</label>
+    <input id="question" type="text" value="{{survey.question}}"><label>Your current question</label>
   </p>
-  {{#each answer in item.answers}}
+  {{#each answer in survey.answers}}
     <p>
-      <input type="text" value="{{answer}}"><label>{{answer}}</label>
+      <input id="{{@index}}" type="text" value="{{answer}}"><label>Answer {{add @index 1}}</label>
     </p>
   {{/each}}
+  {{> answerTextfield}}
+  {{> editButton}}
+</template>
+
+<template name="answerTextfield">
+  <p>
+    <input type="text" name="">
+  </p>
+</template>
+
+<template name="editButton">
+  <p>
+    <button>Edit</button>
+  </p>
 </template>
