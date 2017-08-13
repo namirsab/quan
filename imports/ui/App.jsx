@@ -24,7 +24,7 @@ App = (props) => (
   </div>
 );
 
-export default createContainer((props) => {
+export default App = createContainer(props => {
   return {
     surveys: Surveys.find({}).fetch()
   };
