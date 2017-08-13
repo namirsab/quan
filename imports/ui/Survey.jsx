@@ -11,7 +11,7 @@ const util = require('util')
 // TODO: This can be used to intercept the usecase in which a user did not select an option, but hit the done button.
 let radioSelected = -1;
 
-// Task component - represents a single todo item
+// Survey component. Presents a survey and offers the option to participate in the current survey.
 class Survey extends Component {
 
   // Event handler to determine the answer that was selected.

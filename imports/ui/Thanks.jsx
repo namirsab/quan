@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-// Task component - represents a single todo item
+// Thank you component.
 export default class Thanks extends Component {
 
   toSurveyPage() {
     FlowRouter.go('survey')
-    // this.context.router.push('/survey')
   }
 
   render() {

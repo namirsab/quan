@@ -14,10 +14,6 @@ import {mount} from 'react-mounter';
 class App extends Component {
 }
 
-App.propTypes = {
-  surveys: PropTypes.array.isRequired,
-};
-
 App = (props) => (
   <div>
     {props.main}

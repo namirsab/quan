@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-// Task component - represents a single todo item
+// Welcome component for the application.
 export default class Welcome extends Component {
 
   toSurveyPage() {
     FlowRouter.go('survey')
-    // this.context.router.push('/survey')
   }
 
   render() {
@@ -16,7 +15,6 @@ export default class Welcome extends Component {
         </div>
         <div>
           <p>Please click next to start the survey.</p>
-
           <button className="nextButton" onClick={this.toSurveyPage.bind(this)}>
             Next
           </button>
