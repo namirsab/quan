@@ -18,7 +18,7 @@ Template.editButton.events({
     })
 
     // Retrieve all values from the input fileds.
-    function getValues(allAnswers, callback) {
+    function getValues(allAnswers, callback) { // 1. Why callback
       answers = Object.keys(allAnswers).map(function(index) {
         if (allAnswers[index].value.length !== 0) {
           results.push(0)
